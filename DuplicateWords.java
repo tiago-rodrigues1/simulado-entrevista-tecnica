@@ -10,7 +10,7 @@ public class DuplicateWords {
         Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 
         Scanner scanner = new Scanner(System.in);
-        int numSentences = Integer.parseInt(in.nextLine());
+        int numSentences = Integer.parseInt(scanner.nextLine());
         
         while (numSentences-- > 0) {
             String input = scanner.nextLine();
@@ -24,6 +24,6 @@ public class DuplicateWords {
             System.out.println(input);
         }
         
-        in.close();
+        scanner.close();
     }
 }
